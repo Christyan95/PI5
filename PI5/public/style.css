@@ -121,7 +121,6 @@ img {
 
 .link:hover {
     letter-spacing: 10px;
-    color: white;
 }
 
 .desenho {
@@ -141,7 +140,8 @@ img {
 .desenho2 {
     position:relative;
     left: 50%;
-    border-radius: 20%;
+    border: 5px solid #170db3;
+    border-radius: 5%;
     animation: desenhoAnimacao 2.1s infinite alternate-reverse linear;
 }
 
@@ -324,7 +324,7 @@ img {
 /* Fim Inicio */
 
 
-/* Sobre*/
+/* Sobre */
 #sobre {
     width: 100%;
     background-color: #190d46;
@@ -485,66 +485,158 @@ h2 {
 /* Fim Integrantes */
 
 
-/* Projeto */
+/* Projetos */
 #projeto {
-    width: 100%;
     background-color: #190d46;
 }
 
-.ajustador-2 {
-    padding: 120px 0;
+.projeto {
+    padding-top: 93px;
+}
+
+.projeto h2, .projeto a {
+    text-align: center;
+}
+
+.projeto h2 {
+    padding-bottom: 70px;
+}
+
+.pro1 {
+    background-image: url("DHT11/Dht11.png");
+    height: 195px;
+    width: 310px;
+    border: 5px solid #160b30;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: ease-in-out 0.3s;
+}
+
+.pro2 {
+    background-image: url("TempUmi/tempumi.png");
+    height: 195px;
+    width: 310px;
+    border: 5px solid #160b30;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: ease-in-out 0.3s;
+}
+
+.pro3 {
+    background-image: url("ESP8266/Esp8266.png");
+    height: 195px;
+    width: 310px;
+    border: 5px solid #160b30;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    transition: ease-in-out 0.3s;
+}
+
+#linkprojeto {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    color: #C4C4C4;
+}
+
+.pro1 div p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    color: #C4C4C4;
+}
+
+.pro1:hover {
+    letter-spacing: 3px;
+}
+
+.pro1 div {
+    background-color: #160b30;
+    width: 1000px;
+    text-align: center;
+    padding: 5% 0;
+    transform: rotate(-50deg);
+}
+
+.pro2 div p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    color: #C4C4C4;
+}
+
+.pro2:hover {
+    letter-spacing: 3px;
+}
+
+.pro2 div {
+    background-color: #160b30;
+    width: 1000px;
+    text-align: center;
+    padding: 5% 0;
+    transform: rotate(-50deg);
+}
+
+.pro3 div p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    color: #C4C4C4;
+}
+
+.pro3:hover {
+    letter-spacing: 3px;
+}
+
+.pro3 div {
+    background-color: #160b30;
+    width: 1000px;
+    text-align: center;
+    padding: 5% 0;
+    transform: rotate(-50deg);
+}
+
+.projeto-itens {
     display: flex;
     flex-wrap: wrap;
-    gap: 67px;
-    max-width: 1064px;
-    margin: 0 auto;
-}
-
-h2 {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 45px;
-    text-align: center;
-    color: white;
-}
-
-.projeto {
-    display: flex;
-    flex-direction: column;
+    gap: 29.5px;
+    width: 100%;
     justify-content: center;
-}
-
-.projeto p {
-    text-indent: 30px;
-    font-size: 20px;
-    color: white;
+    padding-bottom: 120px;
 }
 
 @media (max-width:1200px) {
-    .ajustador-2 {
-        justify-content: center;
-        text-align: center;
-    }
+  .projeto {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+  }
 
-    h2 {
-        font-size: 30px;
-    }
+  #projeto {
+      display: flex;
+      justify-content: center;
+  }
 
-    .ajustador-2 p {
-        font-size: 15px;
-    }
-
-    .projeto p {
-        text-indent: 0;
-    }
+  .projeto-itens {
+      flex-direction: column;
+  }
 }
 
-@media(max-width:950px){
-    .ajustador-2 {
-        max-width: 350px;
-        padding: 70px 30px;
+@media (max-width:950px) {
+    .pro1 {
+        max-width: 300px;
     }
+
 }
-/* Fim Projeto*/
+/* Fim Projetos */
 
 
 /* Dados */
@@ -611,7 +703,7 @@ h2 {
 
 /* Habilidades */
 #habilidades {
-    background-color: #11051c;
+    background-color: #190d46
 }
 
 .habilidades-pd {
@@ -679,7 +771,7 @@ h2 {
     .skills-descricao {
         display: flex;
         flex-direction: column-reverse;
-        /* width: 535px; */
+        width: 535px;
         margin: 0 auto;
         gap:50px;
         padding-bottom: 70px;
@@ -727,11 +819,11 @@ h2 {
 }
 
 .skill4 {
-    background-image: url(assets/img/github.png);
+    background-image: url(assets/img/arduino.png);
 }
 
 .skill5 {
-    background-image: url(assets/img/arduino.png);
+    background-image: url(assets/img/github.png);
 }
 /* Fim Habilidades */
 
@@ -790,11 +882,11 @@ h2 {
 }
 
 .links1 {
-    background-image: url(assets/Imagens/svg/githubff2.svg);
+    background-image: url(assets/img/github2.svg);
 }
 
 .links2 {
-    background-image: url(assets/Imagens/svg/linkedinff2.svg);
+    background-image: url(assets/img/linkedin2.svg);
 }
 
 .transparente {
